@@ -1,18 +1,18 @@
-<div class="container">
+<div>
 
     <h5>Percent mode:</h5>
-    <div class="split-example ex-percent">
+    <div class="split-block ex-percent">
         <as-split unit="percent" [direction]="direction" (dragEnd)="dragEnd('percent', $event)" #split="asSplit">
-            <as-split-area size="30" #area1="asSplitArea">
-                <h5>Initial size: <b>30%</b></h5>
-                <h5>Current size: <b>{{ sizes.percent.area1 }}%</b></h5>
+            <as-split-area size="30" minSize="20" #area1="asSplitArea">
+                <!-- <h5>Initial size: <b>30%</b></h5> -->
+                <!-- <h5>Current size: <b>{{ sizes.percent.area1 }}%</b></h5> -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tiam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                     reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </as-split-area>
-            <as-split-area size="70" #area2="asSplitArea">
-                <h5>Initial size: <b>70%</b></h5>
-                <h5>Current size: <b>{{ sizes.percent.area2 }}%</b></h5>
+            <as-split-area size="70" minSize="20" #area2="asSplitArea">
+                <!-- <h5>Initial size: <b>70%</b></h5> -->
+                <!-- <h5>Current size: <b>{{ sizes.percent.area2 }}%</b></h5> -->
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
                     dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
@@ -24,8 +24,8 @@
             </as-split-area>
         </as-split>
     </div>
-    <h5>Pixel mode:</h5>
-    <div class="split-example ex-pixel">
+    <!-- <h5>Pixel mode:</h5>
+    <div class="split-block ex-pixel">
         <as-split unit="pixel" [direction]="direction" (dragEnd)="dragEnd('pixel', $event)">
             <as-split-area size="120">
                 <h5>Initial size: <b>120px</b></h5>
@@ -58,5 +58,5 @@
     <div class="btns">
         <button class="btn btn-warning"
             (click)="direction = (direction === 'horizontal') ? 'vertical' : 'horizontal'">{{ 'Toggle direction: "' + direction + '"' }}</button>
-    </div>
+    </div> -->
 </div>

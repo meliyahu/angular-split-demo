@@ -38,15 +38,16 @@ export class AppComponent {
   //   }, 1000);
   // }
 
+  getSize
   dragEnd(unit, { sizes }) {
     if (unit === 'percent') {
-      this.sizes.percent.area1 = sizes[0];
-      this.sizes.percent.area2 = sizes[1];
-    }
-    else if (unit === 'pixel') {
-      this.sizes.pixel.area1 = sizes[0];
-      this.sizes.pixel.area2 = sizes[1];
-      this.sizes.pixel.area3 = sizes[2];
-    }
+        this.sizes.percent.area1 = sizes[0];
+        this.sizes.percent.area2 = sizes[1];
+      }
+    // else if (unit === 'pixel') {
+    //   this.sizes.pixel.area1 = sizes[0];
+    //   this.sizes.pixel.area2 = sizes[1];
+    //   this.sizes.pixel.area3 = sizes[2];
+    // }
   }
 }

@@ -20,9 +20,9 @@ pre {
     margin: 50px 0;
 }
 
-.split-example {
-    height: 300px;
-    outline: 5px dashed #f9d676;
+.split-block {
+    height: 500px;
+    outline: 5px dashed black;
     margin: 20px;
 }
 
